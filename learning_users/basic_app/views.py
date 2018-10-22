@@ -1,11 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
+
 from basic_app.forms import UserForm, UserProfileInfoForm
 
-#
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
+
+from bokeh.plotting import figure, output_file, show
+from bokeh.embed import components
 
 # Create your views here.
 def index(request):
