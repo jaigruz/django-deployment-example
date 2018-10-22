@@ -80,9 +80,9 @@ import psycopg2
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myproject',
-        'USER': 'myprojectuser',
-        'PASSWORD': 'password',
+        'NAME': 'ingeodata',
+        'USER': 'ingeo_user',
+        'PASSWORD': 'passWord3',
         'HOST': 'localhost',
         'PORT': '',
     }
